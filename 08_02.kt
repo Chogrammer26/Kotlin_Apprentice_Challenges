@@ -1,7 +1,8 @@
 fun main() {
-    val numList: List<Int> = listOf(5,6,5)
-    removeOne(5,numList) // [6,5]
-    removeOne(5,numList) // [6]      
+    var numList: List<Int> = listOf(5,6,5)
+    numList = removeOne(5,numList) // [6,5]
+    numList = removeOne(5,numList) // [6] 
+    println(numList)
 }
 
 fun removeOne(num: Int, list: List<Int>): List<Int> {
@@ -9,6 +10,6 @@ fun removeOne(num: Int, list: List<Int>): List<Int> {
     if (num !in list)
     	println("$num not found")
     else
-    	list.remove(num)
+    	numbers.remove(num)
     return numbers
 }
