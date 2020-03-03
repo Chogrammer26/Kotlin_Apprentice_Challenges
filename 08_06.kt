@@ -5,7 +5,7 @@ fun main() {
 }
 
 fun minMax(array: Array<Int>): Pair<Int,Int>? {
-    if (array.size == 0)
+    if (array.isEmpty())
     	return null
     
     var min = array[0]
