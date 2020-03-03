@@ -7,8 +7,8 @@ fun main() {
 }
 
 fun reverse(array: Array<Int>): Array<Int> {
-    var numbers: Array<Int> = arrayOf()
-    for (i in array.size - 1 downTo 0)
-    	numbers += array[i]
+    var numbers = Array(array.size,{0})
+    for (i in 0 until array.size)
+    	numbers[i] = array[array.size - i - 1]
     return numbers
 }
